@@ -3,9 +3,9 @@
 body {
   background-color: rgb(255, 255, 255) !important;
   min-height: 100vh;
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+  font-family: "Playfair Display", serif!important;
+  font-optical-sizing: auto!important;
+  font-style: normal!important;
 }
 
 .just-centre {
