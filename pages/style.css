@@ -1,5 +1,6 @@
 body {
   background-color: rgb(11, 3, 34) !important;
+  min-height: 100vh;
 }
 
 .just-centre {
@@ -17,6 +18,8 @@ body {
 
 .textHomeTablou {
   text-align: center;
-  height: 200px;
-  width: 430px;
+  max-width: 50rem;
+  border: 40px solid gray;
+  padding: 20px;
+  
 }
