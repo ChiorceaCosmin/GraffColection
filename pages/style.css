@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
 body {
-  background-color: rgb(11, 3, 34) !important;
+  background-color: rgb(255, 255, 255) !important;
   min-height: 100vh;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .just-centre {
@@ -8,18 +13,22 @@ body {
   justify-content: center !important;
 }
 
-
 .titluHome {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 5.5rem;
   display: flex;
   justify-content: center;
+  border-radius: 5px;
 }
 
 .textHomeTablou {
   text-align: center;
   max-width: 50rem;
-  border: 40px solid gray;
-  padding: 20px;
-  
+  border: 50px solid rgb(61, 63, 40);
+  padding: 120px;
+  border-radius: 5px;
+}
+
+.color-header {
+  color: white !important;
 }
