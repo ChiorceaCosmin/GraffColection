@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(11, 3, 34) !important;
+}
+
+.just-centre {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+
+.titluHome {
+  color: white;
+  font-size: 5.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.textHomeTablou {
+  text-align: center;
+  height: 200px;
+  width: 430px;
+}
