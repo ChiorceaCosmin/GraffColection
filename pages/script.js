@@ -10,7 +10,8 @@ document.addEventListener("DOMContentLoaded", initializeSlider);
 function initializeSlider() {
   if (slides.length > 0) {
     slides[slideIndex].classList.add("displaySlide");
-    intervalId = setInterval(nextSlide, 10000);
+    window.currentFrame = slides[slideIndex].name;
+    // intervalId = setInterval(nextSlide, 10000);
   }
 }
 
@@ -25,6 +26,7 @@ function showSlide(index) {
     slide.classList.remove("displaySlide");
   });
   slides[slideIndex].classList.add("displaySlide");
+  window.currentFrame = slides[slideIndex].name;
 }
 function prevSlide() {
   clearInterval(intervalId);
@@ -39,6 +41,10 @@ function nextSlide() {
 
 //link pentru formular
 
-function trimiteLaFormular(){
-  window.location.href = "formularComanda.html"
+function sendOrder(){
+  const orderMessage = document.querySelector('input[name="order-message"]');
+  const orderFrame = window.currentFrame;
+  const orderPrefers = document.querySelector('input[name="order-prefers"]');
+  const orderEmail = document.querySelector('input[name="order-email"]');
+  console.log(orderMessage.value, orderFrame, orderPrefers.value, orderEmail.value)
 }

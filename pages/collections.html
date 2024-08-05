@@ -64,7 +64,7 @@
           <div class="configurare-tablou">
             <div class="cadrane-configurare-tablou">
               <h2>Mesajul pe care vrei sa ti-l pictam</h2>
-              <input class="input-text" type="text" />
+              <input class="input-text" type="text" name="order-message"/>
             </div>
 
             <h2 class="sau-collection">SAU</h2>
@@ -82,31 +82,37 @@
                 class="img-rama-collections-page slide"
                 src="Rame/6108e32b2d2a6_20210803093315.jpg"
                 alt="Rama 2"
+                name="frame-2"
               />
               <img
                 class="img-rama-collections-page slide"
                 src="Rame/6155df08a2a80_20210930070008.jpg"
                 alt="Rama 3"
+                name="frame-3"
               />
               <img
                 class="img-rama-collections-page slide"
                 src="Rame/64fb16f189384_20230908034329.jpg"
                 alt="Rama 4"
+                name="frame-4"
               />
               <img
                 class="img-rama-collections-page slide"
                 src="Rame/8057969.jpg"
                 alt="Rama 5"
+                name="frame-5"
               />
               <img
                 class="img-rama-collections-page slide"
                 src="Rame/8064809_1.jpg"
                 alt="Rama 6"
+                name="frame-6"
               />
               <img
                 class="img-rama-collections-page slide"
                 src="Rame/8093726_1.jpg"
                 alt="Rama 7"
+                name="frame-7"
               />
               </div>
               <button class="prev" onclick="prevSlide()">&#10094</button>
@@ -115,11 +121,15 @@
             </div>
             <div class="preferinte-collections-page">
               <h3>Mai ai alte preferinte asupra tabloului?</h3>
-              <input type="text" name="" id="" class="input-preferinte" />
+              <input type="text" name="order-prefers" id="orderPrefer" class="input-preferinte" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input name="order-email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
           </div>
           <div>
-            <button onclick="trimiteLaFormular()" class="buton-comanda">COMANDA</button>
+            <button onclick="sendOrder()" class="buton-comanda">COMANDA</button>
           </div>
         </div>
       </section>
