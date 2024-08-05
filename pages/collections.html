@@ -2,11 +2,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GraffColection</title>
+    <title>GraffCollection</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Graduate&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -17,11 +17,11 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body background="Photo/—Pngtree—the background of cold and_982208.png">
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div class="container-fluid">
-          <a class="navbar-brand fs-1" href="index.html"><b>GraffCollection</b></a>
+          <a class="navbar-brand" href="index.html"><b>GraffCollection</b></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -34,15 +34,18 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active fs-2" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-2" href="about.html">About Us</a>
+                <a class="nav-link" href="about.html">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-2" href="collections.html"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="collections.html"
                   >Collections</a
                 >
               </li>
@@ -52,8 +55,102 @@
       </nav>
     </header>
 
-    <div class="divTitluHome">
-      <h1 class="titluHome"></h1>
+    <main class="color">
+      <section>
+        <div class="container">
+          <div class="title-collection">
+            <h1><b>Vrei sa-ti personalizezi tabloul?</b></h1>
+          </div>
+          <div class="configurare-tablou">
+            <div class="cadrane-configurare-tablou">
+              <h2>Mesajul pe care vrei sa ti-l pictam</h2>
+              <input class="input-text" type="text" />
+            </div>
+
+            <h2 class="sau-collection">SAU</h2>
+
+            <div class="cadrane-configurare-tablou">
+              <h2>Incarca o poza cu o persoana/personaj/obiect</h2>
+              <input type="file" />
+            </div>
+          </div>
+          <div class="rama-collections-page">
+            <h2 class="title-rama-collection">Rama pe care o vrei:</h2>
+            <div class="slider">
+              <div class="slides">
+              <img
+                class="img-rama-collections-page slide"
+                src="Rame/6108e32b2d2a6_20210803093315.jpg"
+                alt="Rama 2"
+              />
+              <img
+                class="img-rama-collections-page slide"
+                src="Rame/6155df08a2a80_20210930070008.jpg"
+                alt="Rama 3"
+              />
+              <img
+                class="img-rama-collections-page slide"
+                src="Rame/64fb16f189384_20230908034329.jpg"
+                alt="Rama 4"
+              />
+              <img
+                class="img-rama-collections-page slide"
+                src="Rame/8057969.jpg"
+                alt="Rama 5"
+              />
+              <img
+                class="img-rama-collections-page slide"
+                src="Rame/8064809_1.jpg"
+                alt="Rama 6"
+              />
+              <img
+                class="img-rama-collections-page slide"
+                src="Rame/8093726_1.jpg"
+                alt="Rama 7"
+              />
+              </div>
+              <button class="prev" onclick="prevSlide()">&#10094</button>
+              <button class="next" onclick="nextSlide()">&#10095</button>
+
+            </div>
+            <div class="preferinte-collections-page">
+              <h3>Mai ai alte preferinte asupra tabloului?</h3>
+              <input type="text" name="" id="" class="input-preferinte" />
+            </div>
+          </div>
+          <div>
+            <button onclick="trimiteLaFormular()" class="buton-comanda">COMANDA</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="downPage">
+      <div class="detaliiFirma">
+        <p>Date de contact GraffCollection</p>
+        <p>Adresa:Mioritei,76 bis, Bacău, Romania</p>
+        <p>Telefon: 0787613532</p>
+        <p>
+          Poștă electronică:
+          <a href="https://mail.google.com/mail" target="_blank">
+            GraffCollection@gmail.com</a
+          >
+        </p>
+      </div>
+      <div class="detaliiFirma">
+        <img class="downBanner" src="" alt="GraffCollection" />
+      </div>
+      <div class="detaliiFirma">
+        <p>GraffCollection SRL</p>
+        <p>Cod de inregistrare fiscala : RO1210001052</p>
+        <p>Nr.Reg.Com: J04/06/22.10.2024</p>
+        <p>Serie certificat ROCT: A-FE 16015097</p>
+      </div>
+    </div>
+    <div>
+      <footer class="footer">
+        <p>Created by Chiorcea Alexandru Cosmin. © 2024</p>
+      </footer>
     </div>
 
     <script
@@ -61,5 +158,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -3,9 +3,9 @@
 body {
   background-color: rgb(255, 255, 255) !important;
   min-height: 100vh;
-  font-family: "Playfair Display", serif!important;
-  font-optical-sizing: auto!important;
-  font-style: normal!important;
+  font-family: "Graduate", serif !important;
+  font-optical-sizing: auto !important;
+  font-style: normal !important;
 }
 
 .just-centre {
@@ -13,22 +13,304 @@ body {
   justify-content: center !important;
 }
 
-.titluHome {
-  color: rgb(255, 255, 255);
-  font-size: 5.5rem;
-  display: flex;
-  justify-content: center;
-  border-radius: 5px;
-}
-
-.textHomeTablou {
+.text-home-tablou {
   text-align: center;
   max-width: 50rem;
-  border: 50px solid rgb(61, 63, 40);
+  border: 50px ridge rgb(83, 85, 62);
   padding: 120px;
   border-radius: 5px;
 }
 
 .color-header {
   color: white !important;
+}
+
+.text-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.div-p-Home {
+  background-color: rgb(36, 36, 143);
+  color: white;
+  border: 30px outset rgb(36, 36, 143);
+  width: auto;
+  height: 800px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.p-home {
+  margin: 50px;
+}
+
+.img-home {
+  width: 900px;
+}
+
+.div-carduri-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(36, 36, 143);
+}
+
+.p-carduri {
+  font-size: 30px;
+  background-color: rgb(36, 36, 143);
+  color: white;
+  margin: auto;
+}
+
+.p-Anunturi {
+  font-size: 35px;
+  background-color: rgb(36, 36, 143);
+  color: white;
+  align-items: center;
+  text-align: center;
+  border: 30px outset rgb(36, 36, 143);
+}
+
+.downPage {
+  height: 400px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: rgb(36, 36, 143);
+  color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(36, 36, 143);
+  color: white;
+}
+
+.detaliiFirma {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  font-size: 20px;
+}
+
+.ultimul-msj-home {
+  background-color: rgb(36, 36, 143);
+  color: white;
+  margin: auto;
+  text-align: center;
+  padding: 80px;
+  font-size: 25px;
+}
+
+.la-prima-vedere-Abt {
+  border: 50px ridge rgb(83, 85, 62);
+  height: 1130px;
+  justify-content: center;
+  text-align: center;
+}
+
+.p-about {
+  font-size: 27px;
+  margin: 15px;
+}
+
+.color {
+  color: white;
+}
+
+.bg-color {
+  background-color: rgb(36, 36, 143);
+}
+
+.configurare-tablou {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px;
+}
+
+.cadrane-configurare-tablou {
+  border: 40px outset rgb(36, 36, 143);
+  width: 600px;
+  height: 400px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(36, 36, 143);
+}
+
+.input-text {
+  width: 300px;
+  height: 60px;
+}
+
+.rama-collections-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+}
+
+.img-rama-collections-page {
+  width: 700px;
+  border: 40px outset rgb(36, 36, 143);
+}
+
+.preferinte-collections-page {
+  margin: 50px;
+  border: 20px outset rgb(36, 36, 143);
+  width: 1000px;
+  height: 150px;
+  text-align: center;
+  padding: 5px;
+  background-color: rgb(36, 36, 143);
+}
+
+.input-preferinte {
+  width: 950px;
+  height: 60px;
+  padding: 5px;
+}
+
+.title-collection {
+  margin-top: 70px;
+  background-color: rgb(36, 36, 143);
+  border: 30px outset rgb(36, 36, 143);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sau-collection {
+  border: 30px outset rgb(36, 36, 143);
+  background-color: rgb(36, 36, 143);
+  padding: 10px;
+  margin: 50px;
+}
+
+.title-rama-collection {
+  border: 20px outset rgb(36, 36, 143);
+  background-color: rgb(36, 36, 143);
+  padding: 10px;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider img {
+  width: 50%;
+  display: none;
+}
+
+.slides {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+img.displaySlide {
+  display: block;
+  animation-name: fade;
+  animation-duration: 1.3s;
+}
+
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  background-color: rgb(44, 44, 173);
+  color: white;
+  border: 30px outset rgb(36, 36, 143);
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+.slider button:hover {
+  background-color: #6547eb;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.74),
+    0 17px 50px 0 rgba(0, 0, 0, 0.582);
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.buton-comanda {
+  background-color: rgb(36, 36, 143);
+  color: white;
+  font-size: 35px;
+  padding: 15px;
+  border: 30px outset rgb(36, 36, 143);
+  margin: 50px;
+}
+.formularDiv {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.buton-comanda:hover {
+  background-color: #6547eb;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.74),
+    0 17px 50px 0 rgba(0, 0, 0, 0.582);
+}
+
+.form-label {
+  color: white;
+  background-color: red;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.buton-formular-comanda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(36, 36, 143);
+  border: 30px outset rgb(36, 36, 143);
+  margin: 5px;
+  padding: 5px;
+}
+
+.btn-formular {
+  font-size: 20px;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
 }
