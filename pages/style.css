@@ -302,8 +302,70 @@ img.displaySlide {
   padding: 5px;
 }
 
-.btn-formular {
-  font-size: 20px;
+.h2Contact {
+  font-size: 40px;
+  margin-bottom: 40px;
+  background-color: red;
+}
+
+.card {
+  box-shadow: 0px 3px 5px 2px #c5c1c17d;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.card-img-top {
+  max-height: 100%;
+  max-width: 50rem;
+  object-fit: contain;
+}
+
+.w-fit-content {
+  width: fit-content;
+}
+
+.afisajCarduri {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.pCollectionExample {
+  font-size: 30px;
+  background-color: #ff0000e0;
+  padding: 10px;
+  box-shadow: 0px 3px 5px 2px #ffe5e57d;
+}
+
+.pCollectionExample p {
+  margin-bottom: 0;
+}
+
+.priceCollections {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.priceCollections p {
+  padding: 10px;
+  background-color: red;
+}
+
+.paragrafeJosPagina {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  background-color: red;
+  margin: 40px;
+  padding: 20px;
+}
+
+.paragrafeJosPagina p{
+  margin-bottom: 0px;
 }
 
 @keyframes fade {

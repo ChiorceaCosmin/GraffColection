@@ -1,173 +1,204 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GraffCollection</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Graduate&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body background="Photo/—Pngtree—the background of cold and_982208.png">
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><b>GraffCollection</b></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="collections.html"
-                  >Collections</a
-                >
-              </li>
-            </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GraffCollection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body background="Photo/—Pngtree—the background of cold and_982208.png">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><b>GraffCollection</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="collections.html">Collections</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="color">
+    <section>
+      <div class="container">
+        <div class="title-collection">
+          <h1><b>Vrei sa-ti personalizezi tabloul?</b></h1>
+        </div>
+        <div class="configurare-tablou">
+          <div class="cadrane-configurare-tablou">
+            <h2>Mesajul pe care vrei sa ti-l pictam</h2>
+            <input class="input-text" type="text" name="order-message" />
+          </div>
+
+          <h2 class="sau-collection">SAU</h2>
+
+          <div class="cadrane-configurare-tablou">
+            <h2>Incarca o poza cu o persoana/personaj/obiect</h2>
+            <input type="file" />
           </div>
         </div>
-      </nav>
-    </header>
+        <div class="rama-collections-page">
+          <h2 class="title-rama-collection">Rama pe care o vrei:</h2>
+          <div class="slider">
+            <div class="slides">
+              <img class="img-rama-collections-page slide" src="Rame/6108e32b2d2a6_20210803093315.jpg" alt="Rama 2"
+                name="frame-2" />
+              <img class="img-rama-collections-page slide" src="Rame/6155df08a2a80_20210930070008.jpg" alt="Rama 3"
+                name="frame-3" />
+              <img class="img-rama-collections-page slide" src="Rame/64fb16f189384_20230908034329.jpg" alt="Rama 4"
+                name="frame-4" />
+              <img class="img-rama-collections-page slide" src="Rame/8057969.jpg" alt="Rama 5" name="frame-5" />
+              <img class="img-rama-collections-page slide" src="Rame/8064809_1.jpg" alt="Rama 6" name="frame-6" />
+              <img class="img-rama-collections-page slide" src="Rame/8093726_1.jpg" alt="Rama 7" name="frame-7" />
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094</button>
+            <button class="next" onclick="nextSlide()">&#10095</button>
 
-    <main class="color">
-      <section>
-        <div class="container">
-          <div class="title-collection">
-            <h1><b>Vrei sa-ti personalizezi tabloul?</b></h1>
           </div>
-          <div class="configurare-tablou">
-            <div class="cadrane-configurare-tablou">
-              <h2>Mesajul pe care vrei sa ti-l pictam</h2>
-              <input class="input-text" type="text" name="order-message"/>
-            </div>
-
-            <h2 class="sau-collection">SAU</h2>
-
-            <div class="cadrane-configurare-tablou">
-              <h2>Incarca o poza cu o persoana/personaj/obiect</h2>
-              <input type="file" />
-            </div>
-          </div>
-          <div class="rama-collections-page">
-            <h2 class="title-rama-collection">Rama pe care o vrei:</h2>
-            <div class="slider">
-              <div class="slides">
-              <img
-                class="img-rama-collections-page slide"
-                src="Rame/6108e32b2d2a6_20210803093315.jpg"
-                alt="Rama 2"
-                name="frame-2"
-              />
-              <img
-                class="img-rama-collections-page slide"
-                src="Rame/6155df08a2a80_20210930070008.jpg"
-                alt="Rama 3"
-                name="frame-3"
-              />
-              <img
-                class="img-rama-collections-page slide"
-                src="Rame/64fb16f189384_20230908034329.jpg"
-                alt="Rama 4"
-                name="frame-4"
-              />
-              <img
-                class="img-rama-collections-page slide"
-                src="Rame/8057969.jpg"
-                alt="Rama 5"
-                name="frame-5"
-              />
-              <img
-                class="img-rama-collections-page slide"
-                src="Rame/8064809_1.jpg"
-                alt="Rama 6"
-                name="frame-6"
-              />
-              <img
-                class="img-rama-collections-page slide"
-                src="Rame/8093726_1.jpg"
-                alt="Rama 7"
-                name="frame-7"
-              />
-              </div>
-              <button class="prev" onclick="prevSlide()">&#10094</button>
-              <button class="next" onclick="nextSlide()">&#10095</button>
-
-            </div>
-            <div class="preferinte-collections-page">
-              <h3>Mai ai alte preferinte asupra tabloului?</h3>
-              <input type="text" name="order-prefers" id="orderPrefer" class="input-preferinte" />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input name="order-email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
+          <div class="preferinte-collections-page">
+            <h3>Mai ai alte preferinte asupra tabloului?</h3>
+            <input type="text" name="order-prefers" id="orderPrefer" class="input-preferinte" />
           </div>
           <div>
-            <button onclick="sendOrder()" class="buton-comanda">COMANDA</button>
+            <h2 class="bg-color d-flex justify-content-center h2Contact">Date de Contact:</h2>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Adresa de email</label>
+              <input name="order-email" type="email" class="form-control" id="exampleInputEmail1"
+                aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="numarDeTelefon" class="form-label">Numarul de telefon</label>
+              <input name="order-tel" type="tel" class="form-control" id="exampleInputTel" aria-describedby="telHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Adresa unde vrei sa ti ajunga tabloul</label>
+              <input name="order-adress" type="text" class="form-control" id="exampleInputAdress"
+                aria-describedby="adressHelp">
+            </div>
+            <div class="priceCollections">
+              <p >200 lei</p>
+            </div>
           </div>
+
         </div>
-      </section>
-    </main>
+        <div>
+          <button onclick="sendOrder()" class="buton-comanda">COMANDA</button>
+        </div>
+      </div>
+      <div class="afisajCarduri">
+        <div class="pCollectionExample">
+          <p>Colectia Noastra:</p>
+        </div>
+        <div class="d-flex justify-content-center flex-wrap w-fit-content mx-auto mt-5 photo">
+          <div class="card text-center" style="min-width: 18rem; min-height: 29rem">
+            <img src="Photo/jesus picture.png" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">250 lei</h5>
+            </div>
+          </div>
+          <div class="card text-center" style="min-width: 18rem; min-height: 29rem">
+            <img src="Photo/bacau picture.png" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">130 lei</h5>
+            </div>
+          </div>
+          <div class="card text-center" style="min-width: 18rem; min-height: 29rem">
+            <img src="Photo/bloody picture.png" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">170 lei</h5>
+            </div>
+          </div>
+          <div class="card text-center" style="min-width: 18rem; min-height: 29rem">
+            <img src="Photo/caricatura picture.png" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">300 lei</h5>
+            </div>
+          </div>
+          <div class="card text-center" style="min-width: 18rem; min-height: 29rem">
+            <img src="Photo/graff picture.png" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">100 lei</h5>
+            </div>
+          </div>
+          <div class="card text-center" style="min-width: 18rem; min-height: 29rem">
+            <img src="Photo/jail picture.png" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">250 lei</h5>
+            </div>
+          </div>
+          <div class="card text-center" style="min-width: 18rem; min-height: 29rem">
+            <img src="Photo/kent picture.png" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">200 lei</h5>
+            </div>
+          </div>
+          <div class="card text-center" style="min-width: 18rem; min-height: 29rem">
+            <img src="Photo/life picture.png" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">130 lei</h5>
+            </div>
+          </div>
+          </div>
+          <div class="paragrafeJosPagina">
+            <p>Iti place un tablou din cele de mai sus?</p>
+            <p>Contacteaza-ne pe numarul de telefon: 0787613532</p>
+          </div>
+      </div>
 
-    <div class="downPage">
-      <div class="detaliiFirma">
-        <p>Date de contact GraffCollection</p>
-        <p>Adresa:Mioritei,76 bis, Bacău, Romania</p>
-        <p>Telefon: 0787613532</p>
-        <p>
-          Poștă electronică:
-          <a href="https://mail.google.com/mail" target="_blank">
-            GraffCollection@gmail.com</a
-          >
-        </p>
-      </div>
-      <div class="detaliiFirma">
-        <img class="downBanner" src="" alt="GraffCollection" />
-      </div>
-      <div class="detaliiFirma">
-        <p>GraffCollection SRL</p>
-        <p>Cod de inregistrare fiscala : RO1210001052</p>
-        <p>Nr.Reg.Com: J04/06/22.10.2024</p>
-        <p>Serie certificat ROCT: A-FE 16015097</p>
-      </div>
-    </div>
-    <div>
-      <footer class="footer">
-        <p>Created by Chiorcea Alexandru Cosmin. © 2024</p>
-      </footer>
-    </div>
+    </section>
+  </main>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
-  </body>
+  <div class="downPage">
+    <div class="detaliiFirma">
+      <p>Date de contact GraffCollection</p>
+      <p>Adresa:Mioritei,76 bis, Bacău, Romania</p>
+      <p>Telefon: 0787613532</p>
+      <p>
+        Poștă electronică:
+        <a href="https://mail.google.com/mail" target="_blank">
+          GraffCollection@gmail.com</a>
+      </p>
+    </div>
+    <div class="detaliiFirma">
+      <img class="downBanner" src="" alt="GraffCollection" />
+    </div>
+    <div class="detaliiFirma">
+      <p>GraffCollection SRL</p>
+      <p>Cod de inregistrare fiscala : RO1210001052</p>
+      <p>Nr.Reg.Com: J04/06/22.10.2024</p>
+      <p>Serie certificat ROCT: A-FE 16015097</p>
+    </div>
+  </div>
+  <div>
+    <footer class="footer">
+      <p>Created by Chiorcea Alexandru Cosmin. © 2024</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
