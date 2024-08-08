@@ -71,8 +71,8 @@
               <img class="img-rama-collections-page slide" src="Rame/8064809_1.jpg" alt="Rama 6" name="frame-6" />
               <img class="img-rama-collections-page slide" src="Rame/8093726_1.jpg" alt="Rama 7" name="frame-7" />
             </div>
-            <button class="prev" onclick="prevSlide()">&#10094</button>
-            <button class="next" onclick="nextSlide()">&#10095</button>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
 
           </div>
           <div class="preferinte-collections-page">
@@ -96,13 +96,13 @@
                 aria-describedby="adressHelp">
             </div>
             <div class="priceCollections">
-              <p >200 lei</p>
+              <p>200 lei</p>
             </div>
           </div>
 
         </div>
         <div>
-          <button onclick="sendOrder()" class="buton-comanda">COMANDA</button>
+          <button class="buton-comanda">COMANDA</button>
         </div>
       </div>
       <div class="afisajCarduri">
@@ -158,11 +158,11 @@
               <h5 class="card-title">130 lei</h5>
             </div>
           </div>
-          </div>
-          <div class="paragrafeJosPagina">
-            <p>Iti place un tablou din cele de mai sus?</p>
-            <p>Contacteaza-ne pe numarul de telefon: 0787613532</p>
-          </div>
+        </div>
+        <div class="paragrafeJosPagina">
+          <p>Iti place un tablou din cele de mai sus?</p>
+          <p>Contacteaza-ne pe numarul de telefon: 0787613532</p>
+        </div>
       </div>
 
     </section>
@@ -194,11 +194,13 @@
       <p>Created by Chiorcea Alexandru Cosmin. © 2024</p>
     </footer>
   </div>
-
+  <div class="loader-wrapper" style="display: none;">
+    <div class="loader"></div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+  <script src="script.js" type="module"></script>
 </body>
 
 </html>
