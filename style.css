@@ -87,6 +87,7 @@ body {
   align-items: center;
   background-color: rgb(36, 36, 143);
   color: white;
+  text-align: center;
 }
 
 .detaliiFirma {
@@ -95,6 +96,7 @@ body {
   flex-direction: column;
   padding: 50px;
   font-size: 20px;
+  text-align: center;
 }
 
 .ultimul-msj-home {
@@ -134,7 +136,8 @@ body {
 }
 
 .cadrane-configurare-tablou {
-  border: 40px outset rgb(36, 36, 143);
+  background-color: rgb(84 84 84 / 80%);
+  border: 40px outset rgb(0 0 0);
   width: 600px;
   height: 400px;
   text-align: center;
@@ -144,7 +147,6 @@ body {
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(36, 36, 143);
 }
 
 .input-text {
@@ -161,17 +163,17 @@ body {
 
 .img-rama-collections-page {
   width: 700px;
-  border: 40px outset rgb(36, 36, 143);
+  border: 30px outset rgb(0 0 0);
 }
 
 .preferinte-collections-page {
   margin: 50px;
-  border: 20px outset rgb(36, 36, 143);
-  width: 1000px;
-  height: 150px;
+  border: 40px outset rgb(0 0 0);
+  width: 1050px;
+  height: 200px;
   text-align: center;
   padding: 5px;
-  background-color: rgb(36, 36, 143);
+  background-color: rgb(84 84 84 / 80%);
 }
 
 .input-preferinte {
@@ -182,8 +184,8 @@ body {
 
 .title-collection {
   margin-top: 70px;
-  background-color: rgb(36, 36, 143);
-  border: 30px outset rgb(36, 36, 143);
+  background-color: rgb(84 84 84 / 80%);
+  border: 30px outset rgb(0 0 0);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,15 +201,15 @@ body {
 }
 
 .sau-collection {
-  border: 30px outset rgb(36, 36, 143);
-  background-color: rgb(36, 36, 143);
+  border: 30px outset rgb(0 0 0);
+  background-color: rgb(84 84 84 / 80%);
   padding: 10px;
   margin: 50px;
 }
 
 .title-rama-collection {
-  border: 20px outset rgb(36, 36, 143);
-  background-color: rgb(36, 36, 143);
+  border: 30px outset rgb(0 0 0);
+  background-color: rgb(84 84 84 / 80%);
   padding: 10px;
 }
 
@@ -240,15 +242,18 @@ img.displaySlide {
   top: 50%;
   transform: translateY(-50%);
   font-size: 3rem;
-  background-color: rgb(44, 44, 173);
+  background-color: rgb(84 84 84 / 80%);
+
   color: white;
-  border: 30px outset rgb(36, 36, 143);
+  border: 30px outset rgb(0 0 0);
+
   cursor: pointer;
   padding: 10px 15px;
 }
 
 .slider button:hover {
-  background-color: #6547eb;
+  background-color: rgba(84, 84, 84, 0.932);
+
   color: white;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.74),
     0 17px 50px 0 rgba(0, 0, 0, 0.582);
@@ -263,13 +268,16 @@ img.displaySlide {
 }
 
 .buton-comanda {
-  background-color: rgb(36, 36, 143);
+  background-color: rgb(84 84 84 / 80%);
+
   color: white;
   font-size: 35px;
   padding: 15px;
-  border: 30px outset rgb(36, 36, 143);
+  border: 30px outset rgb(0 0 0);
+
   margin: 50px;
 }
+
 .formularDiv {
   margin-top: 200px;
   display: flex;
@@ -278,7 +286,8 @@ img.displaySlide {
 }
 
 .buton-comanda:hover {
-  background-color: #6547eb;
+  background-color: rgba(84, 84, 84, 0.945);
+
   color: white;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.74),
     0 17px 50px 0 rgba(0, 0, 0, 0.582);
@@ -296,8 +305,10 @@ img.displaySlide {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(36, 36, 143);
-  border: 30px outset rgb(36, 36, 143);
+  background-color: rgb(84 84 84 / 80%);
+
+  border: 30px outset rgb(0 0 0);
+
   margin: 5px;
   padding: 5px;
 }
@@ -362,9 +373,10 @@ img.displaySlide {
   background-color: red;
   margin: 40px;
   padding: 20px;
+  text-align: center;
 }
 
-.paragrafeJosPagina p{
+.paragrafeJosPagina p {
   margin-bottom: 0px;
 }
 
@@ -372,6 +384,7 @@ img.displaySlide {
   from {
     opacity: 0.5;
   }
+
   to {
     opacity: 1;
   }
@@ -390,8 +403,10 @@ img.displaySlide {
 }
 
 .loader {
-  border: 8px solid #f3f3f3; /* Light grey */
-  border-top: 8px solid #460bf5; /* Blue */
+  border: 8px solid #f3f3f3;
+  /* Light grey */
+  border-top: 8px solid #460bf5;
+  /* Blue */
   border-radius: 50%;
   width: 36px;
   height: 36px;
@@ -399,6 +414,154 @@ img.displaySlide {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 1800px) {
+  .div-p-Home{
+    font-size: 30px;
+
+  }
+}
+
+
+@media only screen and (max-width: 1500px) {
+  .div-p-Home{
+    font-size: 25px;
+  }
+  .p-about{
+    font-size: 23px;
+  }
+}
+
+
+@media only screen and (max-width: 1270px) {
+  .p-about{
+    font-size: 19px;
+  }
+  .detaliiFirma{
+    font-size: 17px;
+  }
+  .downPage{
+    height: 600px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .slider{
+    width: 80%;
+  }
+  .preferinte-collections-page{
+    width: 700px;
+    border: 20px outset rgb(0, 0, 0);
+    height: 150px;
+  }
+  .input-preferinte{
+    width: 550px;
+    height: 40px;
+  }
+  .slider button{
+    font-size: 2rem;
+    border: 19px outset rgb(0, 0, 0);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .div-p-Home{
+    font-size: 20px;
+
+  }
+  .div-carduri-home {
+  
+    flex-direction: column;
+    
+  }
+  .p-about{
+    font-size: 16px;
+  }
+  .img-home{
+    width: 500px;
+  }
+  .cadrane-configurare-tablou{
+    width: 400px;
+  }
+  .title-rama-collection{
+    border: 18px outset rgb(0, 0, 0);
+  }
+  .form-label{
+    font-size: 19px;
+  }
+  .h2Contact{
+    font-size: 25px;
+  }
+  .preferinte-collections-page h3{
+    font-size: 23px;
+  }
+  .buton-comanda{
+    font-size: 25px;
+  }
+  .paragrafeJosPagina{
+    font-size: 20px;
+  }
+  .preferinte-collections-page{
+    width: 500px;
+  }
+  .input-preferinte{
+    width: 350px;
+    height: 30px;
+  }
+}
+
+
+
+@media only screen and (max-width: 670px) {
+  .div-p-Home{
+    font-size: 15px;
+
+  }
+  .p-about{
+    font-size: 13px;
+  }
+  .img-home{
+    width: 350px;
+  }
+  .downPage{
+    height: 700px;
+  }
+  detaliiFirma{
+    font-size: 14px;
+  }
+  .text-home-tablou{
+    padding: 40px;
+  }
+  .title-collection h1{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  
+  .p-about{
+    font-size: 10px;
+  }
+  .text-title{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 444px) {
+  .div-p-Home{
+    font-size: 12px;
+  }
+  .text-home-tablou{
+    padding: 20px;
+  }
+  .img-home{
+    width: 300px;
+  }
 }
